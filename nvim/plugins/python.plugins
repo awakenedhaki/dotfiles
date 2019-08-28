@@ -1,0 +1,6 @@
+" Autocompleter
+" Plug 'davidhalter/jedi-vim'
+" "Plug 'zchee/deoplete-jedi'
+
+" Syntax
+Plug 'numirias/semshi', {'do': ':UpdateRemotePlugins'} 
