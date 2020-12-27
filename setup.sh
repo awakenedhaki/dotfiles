@@ -7,10 +7,9 @@ xcode-select --install
 
 # ===========================================
 declare -a taps=(
-	'caskroom/cask'
+	'homebrew/cask'
 	'homebrew/cask-versions'
-	'caskroom/fonts'
-	'sambadevi_/powerline9k'
+	'homebrew/fonts'
 	'homebrew/bundle'
 	'homebrew/core'
 )
@@ -31,7 +30,7 @@ declare -a cask_apps=(
 	'spectacle'
 	'slack'
 	'font-hack-nerd-font'
-	'chromdriver'
+	'chromedriver'
 	'visual-studio-code'
 	'processing'
 	'minecraft'
@@ -148,3 +147,4 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-completions ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
