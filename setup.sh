@@ -30,7 +30,6 @@ declare -a cask_apps=(
 	'spectacle'
 	'slack'
 	'font-hack-nerd-font'
-	'chromedriver'
 	'visual-studio-code'
 	'processing'
 	'minecraft'
@@ -70,15 +69,15 @@ declare -a brew_app=(
 	'tree'
 	'htop'
 	'vim'
+	'wget'
 	'neovim'
 	'ctags'
-	'powerlevel9k'
 	'pandoc'
 	'git'
-	'neofetch'
 	'bat'
 	'geckodriver'
 	'node'
+	'chromedriver'
 	'python@3.9'
 	'tig'
 	'r'
@@ -89,12 +88,6 @@ for app in "${brew_apps[@]}"; do
 done
 
 # ===========================================
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python get-pip.py
-rm get-pip.py
-
-pip install -U pip
-
 declare -a pip_libraries=(
 	'radian'
 	'neovim'
