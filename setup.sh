@@ -29,26 +29,26 @@ declare -a cask_apps=(
 	'iterm2-nightly' 
 	'postman'
 	'spectacle'
-	'skype'
 	'slack'
 	'font-hack-nerd-font'
 	'chromdriver'
 	'visual-studio-code'
-	'procressing'
+	'processing'
 	'minecraft'
 	'mysqlworkbench'
 	'mysql-connector-python'
 	'typora'
 	'github'
-	'openinterminal'
-	'jupyter-notebook-viewer'
+	'steam'
+	'mendeley'
+	'epic-games'
+	'imagej'
 	'numi'
-	'airpass'
 	'rstudio'
 )
 
 for app in "${cask_apps[@]}"; do
-  brew cask install "$app"
+  brew install --cask "$app"
 done
 
 # ===========================================
@@ -58,8 +58,6 @@ declare -a mas_apps=(
 	'409183694'  # com.apple.iWork.Keynote (9.0)
 	'409201541'  # com.apple.iWork.Pages (8.0)
 	'409203825'  # com.apple.iWork.Numbers (6.0)
-	'1176895641' # com.readdle.smartemail-Mac (2.3.2)
-	'1167193104' # CSView (1.3.3)
 )
 
 for app in "${mas_apps[@]}"; do
@@ -70,11 +68,10 @@ done
 declare -a brew_app=(
 	'bash'
 	'mysql'
-	'speedtest-cli',
 	'tree'
 	'htop'
-	'neovim'
 	'vim'
+	'neovim'
 	'ctags'
 	'powerlevel9k'
 	'pandoc'
@@ -83,7 +80,7 @@ declare -a brew_app=(
 	'bat'
 	'geckodriver'
 	'node'
-	'python3'
+	'python@3.9'
 	'tig'
 	'r'
 )
@@ -99,11 +96,7 @@ rm get-pip.py
 
 pip install -U pip
 
-pip install bpython
-pip install -U radian
-
 declare -a pip_libraries=(
-	'bpython'
 	'radian'
 	'neovim'
 	'requests'
@@ -111,8 +104,21 @@ declare -a pip_libraries=(
 	'selenium'
 	'numpy'
 	'scikit-learn'
+	'scipy'
+	'sklearn'
+	'snakemake'
 	'pandas'
 	'yapf'
+	'click'
+	'Flask'
+	'fastapi'
+	'SQLAlchemy'
+	'jupyterlab'
+	'pynvim'
+	'matplotlib'
+	'seaborn'
+	'tqdm'
+	'ipython'
 	'autopep8'
 )
 
@@ -127,7 +133,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 # ===========================================
 npm install -g prettier
-npm install -g googleapis
 npm install -g gtop
 
 # ===========================================

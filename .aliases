@@ -7,6 +7,7 @@ alias ....='cd ../../..'
 alias path='echo $PATH'
 
 alias python='python3'
+alias pip='pip3'
 
 # Grep through histories
 alias ch='history | grep "git commit"'

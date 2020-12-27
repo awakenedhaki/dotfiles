@@ -1,5 +1,0 @@
-Plug 'morhetz/gruvbox'
-Plug 'joshdick/onedark.vim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'Badacadabra/vim-archery'
-Plug 'reedes/vim-colors-pencil'
